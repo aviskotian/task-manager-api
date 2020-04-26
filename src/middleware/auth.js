@@ -13,8 +13,8 @@ const auth = async (req, res, next) => {
         req.token = token
         req.user = user
         next()
-        console.log(token)
-        console.log(decoded)
+        //console.log(token)
+        //console.log(decoded)
     } catch (e) {
         res.status(401).send({ error:'Unauthorized request.'})
     }
